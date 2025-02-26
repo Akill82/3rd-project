@@ -1,0 +1,362 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #003366;
+}
+
+header .header-logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+header .admission-btn {
+    background-color: #0099cc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('classroom.jpg') center center/cover no-repeat;
+    color: white;
+    background-blend-mode: overlay;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+}
+
+.hero-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.about-section, .specialties-section, .facilities-section, .courses-section {
+    background-color: #e3eaf0;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-section h2, .about-section h3, .specialties-section h3, .facilities-section h3, .courses-section h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.specialties-section ul, .courses-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.specialties-section ul li, .courses-section ul li {
+    margin-bottom: 5px;
+}
+
+.facilities-section p {
+    margin: 10px 0;
+}
+
+
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4a6da7;
+    padding: 20px 0;
+    color: white;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.stat-item h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    font-size: 16px;
+}
+
+.building-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.building-image img {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.scholarship-info {
+    background-color: white;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+}
+
+.scholarship-info h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.scholarship-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+.hero-img{
+    position: relative;
+    filter: opacity(0.4);
+}
+
+.centered{
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.contect {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    background-color: #3b587d;
+    color: white;
+}
+
+.left-section, .right-section {
+    width: 50%;
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.menu h3, .subscription h3 {
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin-bottom: 5px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.subscription input {
+    padding: 5px;
+    margin-right: 5px;
+    width: 70%;
+    border: none;
+    border-radius: 3px;
+}
+
+.subscription button {
+    background-color: #3b587d;
+    border: none;
+    cursor: pointer;
+}
+
+.subscription button img {
+    width: 20px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #d3d3d3;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #c0c0c0;
+    margin-top: auto;
+}
+
+.footer p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #4a2a7a;
+    color: white;
+    padding: 60px 0;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(74, 42, 122, 0.8);
+}
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    display: flex;
+    gap: 10px;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.welcome-message {
+    padding: 20px;
+}
+
+.welcome-message h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.welcome-message h3 {
+    color: black;
+}
+
+.welcome-message p {
+    color: black;
+}
+
+.college-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+.main-content {
+    grid-template-columns: 1fr;
+}
+           
+nav ul {
+    display: none;
+}
+}
+
+.building-image img {
+    padding: 25px;
+    width: 400px;
+    margin: 30px;
+}
+.dep{
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    
+}
+
+.row {
+    display: flex;
+    gap: 250px;
+    padding-left: 50px;
+  }
+  
+  .box {
+    background-color: #ffffff; 
+    color: black; 
+    padding: 10px 20px; 
+    padding: 200px 20px;
+    border-radius: 5px; 
+  }
